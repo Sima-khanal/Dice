@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDevelopment</title>
+    <link rel="stylesheet" href="dice.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="https://i.pinimg.com/236x/7c/1f/8d/7c1f8d808bfc91e74d120dccac1eaa53.jpg"  alt="Logo" height="45vh" width="65vh"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#live">Live View</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li class="dropdown">
+                <button id="loginBtn">Login</button>
+
+                <!-- The Modal for Login -->
+                <div id="loginModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="closeLogin">&times;</span>
+                        <h2>Login</h2>
+                        <form>
+                            <label for="loginEmail">Email:</label>
+                            <input type="email" id="loginEmail" name="loginEmail" required>
+                            
+                            <label for="loginPassword">Password:</label>
+                            <input type="password" id="loginPassword" name="loginPassword" required>
+                            
+                            <button type="submit">Login</button>
+                        </form>
+                    </div>
+                </div>
+                </li>            
+        </ul>
+    </nav>
+    <div class="container" id="home">
+        <div class="content">
+            <h1>The Fascinating World of Dice: A Symbol of Chance and Probability</h1>
+            <p class="slide-in">
+                Dice, small yet powerful objects, have been used in games and divination for thousands of years. Typically cube-shaped with six numbered faces, dice introduce elements of chance in board games, gambling, and role-playing adventures. Their origins date back to ancient civilizations, where they were crafted from bone, wood, or stone. Today, dice come in various shapes and sizes, each serving a unique purpose in different games. Beyond their gaming utility, dice are also used in teaching probability and have inspired art and design, symbolizing the unpredictable nature of life.
+            </p>
+        </div>
+        <div class="image-container">
+            <div class="cube">
+                <div class="face front"><img src="https://i.pinimg.com/236x/26/f2/b8/26f2b83ca1e0bcc64748bd0e535c1a98.jpg" alt="Front Face"></div>
+                <div class="face back"><img src="https://i.pinimg.com/236x/7f/61/02/7f61023837aa64b7cea96e1dd7f62013.jpg" alt="Back Face"></div>
+                <div class="face left"><img src="https://i.pinimg.com/236x/cd/9d/9b/cd9d9b0305278ceebf3640475261864b.jpg" alt="Left Face"></div>
+                <div class="face right"><img src="https://i.pinimg.com/236x/aa/9b/6e/aa9b6e76f4c5449c20a7b19a1984547c.jpg" alt="Right Face"></div>
+                <div class="face top"><img src="https://i.pinimg.com/236x/eb/a5/52/eba552fb6ed59145815c92fda4aad61b.jpg" alt="Top Face"></div>
+                <div class="face bottom"><img src="https://i.pinimg.com/236x/b1/86/c0/b186c08557bab8b51ccfd511dd4d1819.jpg" alt="Bottom Face"></div>
+            </div>
+        </div>
+    </div>
+    <div class="body-section" id="about">
+        <div class="card" id="card1">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/236x/59/cc/84/59cc848973e7f9f579abe796c4f9c0c9.jpg" alt="Image 1">
+                </div>
+                <div class="card-back">
+                    <p><h4>Side with 1 Pip:</h4>
+
+                        This side has a single dot, usually centered on the face. It represents the number 1.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/236x/89/e0/ab/89e0ab390989b73e79a5dc8f27c4e1cf.jpg" alt="Image 2">
+                </div>
+                <div class="card-back">
+                    <p><h4>Side with 2 Pips:</h4>
+                    This side has two dots. The dots are usually placed diagonally from each other, one in the top left corner and the other in the bottom right corner. It represents the number 2.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/236x/8a/52/c8/8a52c8885908e6f924e75e91b82ff3fe.jpg" alt="Image 3">
+                </div>
+                <div class="card-back">
+                    <p><h4>Side with 3 Pips:</h4>
+                        This side has three dots. The dots are arranged in a diagonal pattern, with one dot in each corner of the diagonal and one dot in the center. It represents the number 3.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/564x/52/47/98/5247985305c074c7a61286f61fc8e224.jpg" alt="Image 4">
+                </div>
+                <div class="card-back">
+                    <p><h4>Side with 4 Pips:</h4>
+                        This side has four dots, arranged in a square pattern, with one dot in each corner of the square. It represents the number 4.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/236x/39/ca/64/39ca646f89f76ffd638e438ddfd48061.jpg" alt="Image 5">
+                </div>
+                <div class="card-back">
+                    <p><h4>Side with 5 Pips:</h4>
+                        This side has five dots. The dots are arranged with one in each corner and one in the center, forming an X shape. It represents the number 5.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/236x/64/9c/ba/649cbad85f9eab77e979d6061e1bf940.jpg" alt="Image 6">
+                </div>
+                <div class="card-back">
+                    <p><h4>Side with 6 Pips:</h4>
+                        This side has six dots. The dots are arranged in two vertical rows of three, evenly spaced. It represents the number 6.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-1" >
+        <div class="image-row">
+            <div class="image-box">
+                <img src="https://i.pinimg.com/564x/f2/0a/84/f20a849a6cee7adb6f0b1c906b752381.jpg" alt="Image 1">
+            </div>
+            <div class="image-box">
+                <img src="https://i.pinimg.com/236x/06/ed/a2/06eda2f0365fd3add85468972617f003.jpg" alt="Image 2">
+            </div>
+            <div class="image-box">
+                <img src="https://i.pinimg.com/236x/6a/7c/56/6a7c56ac5aa57e7786586ba62cbf9fbd.jpg" alt="Image 3">
+            </div>
+        </div>
+        <div class="text-area">
+            <p><h2>Why to play dice?</h2>
+                Playing dice is a popular activity because it combines luck with strategy, making games both unpredictable and engaging. The simple act of rolling dice creates excitement and anticipation, making it fun for players of all ages. Dice games often foster social interaction, bringing people together in a relaxed and enjoyable setting. Additionally, they offer a great way to develop skills like quick thinking and basic math, while also serving as an accessible form of entertainment that can be played almost anywhere.</p>
+        </div>
+        <div class="image-row">
+            <div class="image-box">
+                <img src="https://i.pinimg.com/474x/b9/82/23/b98223a2eb72080603b8fea69082b490.jpg" alt="Image 4">
+            </div>
+            <div class="image-box">
+                <img src="https://i.pinimg.com/564x/88/15/d4/8815d492946f35c26be491e14d847256.jpg" alt="Image 5">                
+            </div>
+            <div class="image-box">
+                <img src="https://i.pinimg.com/236x/d7/9b/02/d79b02243740c3d07a186ef8e07760c2.jpg" alt="Image 6">
+            </div>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="game-container">
+            <div class="dice-game" id="live">
+                <div class="dice" id="dice">
+                    <div class="face one">1</div>
+                    <div class="face two">2</div>
+                    <div class="face three">3</div>
+                    <div class="face four">4</div>
+                    <div class="face five">5</div>
+                    <div class="face six">6</div>
+                </div>
+                <button id="roll-button">Roll Dice</button>
+                <p id="dice-result"></p>
+            </div>
+        </div>
+        <div class="text-container">
+            <p>
+                Welcome to the Dice Game! Roll the dice to see what number you get. The game is simple and fun. Whether you're playing alone or with friends, rolling the dice can bring excitement and a bit of luck into your day. Ready to try your luck?
+            </p>
+        </div>
+    </div>
+
+    <section class="contact-info-container">
+        <div class="contact-form" id="contact">
+            <h2>Contact Us</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="4cc9ce67-76bd-452d-b651-bed1bf6b2ff1">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        
+        <div class="info-section">
+            <h2>Our Information</h2>
+            <p>
+                <strong>Address:</strong> Budhanilkantha 10, Kathmandu, Nepal
+            </p>
+            <p>
+                <strong>Phone:</strong> 9848327268
+            </p>
+            <p>
+                <strong>Email:</strong> seemakhanal608@gmail.com
+            </p>
+            <p>
+                <strong>Business Hours:</strong> Mon-Fri 9:00 AM - 5:00 PM
+            </p>
+        </div>
+    </section>
+
+    
+    <script >
+        // Get the modal elements
+var loginModal = document.getElementById("loginModal");
+
+// Get the button that opens the login modal
+var loginBtn = document.getElementById("loginBtn");
+
+// Get the <span> elements that close the modals
+var closeLogin = document.getElementById("closeLogin");
+
+
+// When the user clicks the button, open the login modal
+loginBtn.onclick = function() {
+    loginModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modals
+closeLogin.onclick = function() {
+    loginModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == loginModal) {
+        loginModal.style.display = "none";
+    }
+}
+document.getElementById('roll-button').addEventListener('click', function() {
+    var dice = document.getElementById('dice');
+    var diceResult = document.getElementById('dice-result');
+    var result = Math.floor(Math.random() * 6) + 1;
+
+    dice.style.transform = 'rotateX(' + (result * 60) + 'deg) rotateY(' + (result * 60) + 'deg)';
+    diceResult.textContent = 'You rolled a ' + result + '!';
+});
+
+    </script>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Sima Khanal. All rights reserved.</p>
+            <p>Dice Game</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
